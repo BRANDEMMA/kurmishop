@@ -52,25 +52,38 @@ h1{
 	list-style:none;
 	background-color: #82c0bf;
 	width: 100%;
-	height: 38px;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
 
 }
+.delivery{
+	color: white;
+	float: left;
+	font-weight: bolder;
+	padding: 10px 0 10px 1.5%;
+	width: 25%;
+}
+.delivery a{
+	color: white;
+	text-decoration: none;
+}
+.delivery a:hover{
+	color:#ec6593;
+}
 #menuup ul{
-	position: absolute;
-	right: 0;
-
+	display: flex;
+	float: left;
+	justify-content: flex-end;
 	margin: 0;
 	padding: 0;
-
+	width: 73%;
 }
 
 #menuup li{
 	display: block;
 	float: left;
-	padding: 10px 20px;
+	padding: 10px 1.5%;
 	
 }
 #menuup li a{
@@ -92,6 +105,7 @@ nav#servicios{
 }
 nav#servicios ul{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
 	text-decoration: none;
@@ -122,6 +136,7 @@ nav#servicios li a:hover{
 
 /*----  ESTILOS DEL MENU RESPONSIVE (INICIA) ----*/
 .menu-responsive{
+	display: none;
 	margin: 0 auto;
 	position: relative;
 	width: 100%
@@ -529,3 +544,13 @@ footer .contenedorfinal .partes2  a.redesg:hover{
 	height:30px;
 	display: inline-block;
 }
+
+
+/*=============   RESPONSIVE (INICIA)   =============*/
+@media(max-width: 800px){
+	nav#servicios li{
+		margin: 0 60px;
+    	padding: 6px 0;
+	}
+}
+/*=============   RESPONSIVE (TERMINA)   =============*/
